@@ -197,11 +197,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         setTimeout(() => {
             leafyDiv.style.top = '100%';
-        }, 100);
+        }, 1);
 
         setTimeout(() => {
             leafyDiv.remove();
-        }, 3000); // Adjust the duration of leaf animation as needed
+        }, 0.5); // Adjust the duration of leaf animation as needed
     }
 
     // Function to handle scroll event
