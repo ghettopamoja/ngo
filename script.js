@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         // Check if the page is scrolled 30px
-        if (scrollTop % 15 === 0) {
+        if (scrollTop % 100 === 0) {
             animateFallingLeafyDiv();
         }
     }
