@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to create a leafy div with the welcome message
     function createLeafyDiv(message) {
         const leafyDiv = document.createElement('div');
-        leafyDiv.classList.add('leafy-div');
+        leafyDiv.classList.add('leafy-divs');
         leafyDiv.textContent = `${message.translation} (${message.lang})`;
         return leafyDiv;
     }
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         // Check if the page is scrolled 30px
-        if (scrollTop % 100 === 0) {
+        if (scrollTop % 1000 === 0) {
             animateFallingLeafyDiv();
         }
     }
