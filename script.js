@@ -197,11 +197,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
         setTimeout(() => {
             leafyDiv.style.top = '100%';
-        }, 1);
+        }, 100);
 
         setTimeout(() => {
             leafyDiv.remove();
-        }, 0.5); // Adjust the duration of leaf animation as needed
+        }, 3000); // Adjust the duration of leaf animation as needed
     }
 
     // Function to handle scroll event
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
         // Check if the page is scrolled 30px
-        if (scrollTop % 1000 === 0) {
+        if (scrollTop % 15 === 0) {
             animateFallingLeafyDiv();
         }
     }
